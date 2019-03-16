@@ -102,11 +102,9 @@ textSize = 14
 setHintTextMaxWidth(0.3333)
 ```
 
-#### 动画样式
+#### 动画样式与样式名称
 
 <img src="https://raw.githubusercontent.com/hanzhanbing/AVLoadingIndicatorView/master/screenshots/avi.gif" width="250px" />
-
-#### 样式名称
 
 ```
 // 第一行
