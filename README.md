@@ -6,8 +6,6 @@
 
   ```
   implementation 'com.wang.avi:library:2.1.3'
-  ```
   
-  ```
   implementation 'com.squareup.assertj:assertj-android-cardview-v7:1.2.0'
   ```
