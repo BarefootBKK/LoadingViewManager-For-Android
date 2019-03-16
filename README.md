@@ -18,9 +18,18 @@
   
 ## 快速开始
 
+#### 构建动画
+
   ```
   LoadingViewManager.with(Activity或Fragment).setHintText("加载提示").build();
   ```
+  
+#### 关闭动画
+
+  ```
+  LoadingViewManager.dismiss();
+  ```
+
 
 ## 更多用法
 
