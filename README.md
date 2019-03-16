@@ -33,31 +33,12 @@
 
 ## 更多用法
 
-#### 修改动画样式
-
-  ```
-  LoadingViewManager.with(activity)
-                        .setAnimationStyle("BallClipRotatePulseIndicator")  // 修改动画样式，传入样式名称
-                        .setHintText("正在加载")
-                        .build();
-  ```
-  
-#### 显示加载边框
-
-  ```
-  LoadingViewManager.with(activity)
-                        .setShowInnerRectangle(true)  // 显示矩形框
-                        .setHintText("正在加载")
-                        .build();
-  ```
-    
-    
-#### 概览
+### 概览
 
   ```
   LoadingViewManager.with(this)                 // Activity或Fragment
                 .setHintText("加载中")          // 提示信息
-                .setAnimationStyle("BallClipRotatePulseIndicator")  // 设置加载动画样式
+                .setAnimationStyle("BallClipRotatePulseIndicator")  // 修改动画样式，传入样式名称
                 .setShowInnerRectangle(true)    // 是否显示矩形框
                 .setTouchOutsideToDismiss(true) // 是否点击动画外部消失
                 .setOutsideAlpha(0.5f)          // 设置外部背景透明度
