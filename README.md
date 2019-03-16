@@ -86,7 +86,7 @@
   LoadingViewManager.dismiss(true); // 参数：isForcedDismiss 是否强制关闭
   ```
 
-#### 一些参数默认值
+#### 参数默认值示例
 
 ```
 minAnimTime = 1000
