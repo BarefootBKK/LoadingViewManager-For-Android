@@ -13,6 +13,10 @@ import android.widget.TextView;
 
 import com.wang.avi.AVLoadingIndicatorView;
 
+/**
+ * @author BarefootBKK
+ * @date 2019/03/17
+ */
 public class LoadingViewManager {
     public final static int MATCH_PARENT = RelativeLayout.LayoutParams.MATCH_PARENT;
     public final static int WRAP_CONTENT = RelativeLayout.LayoutParams.WRAP_CONTENT;
