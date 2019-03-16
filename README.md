@@ -66,6 +66,7 @@
                 .setMinAnimTime(2000)           // 设置动画的最短时长
                 .setAnimationSize(400, 400)     // 设置动画大小
                 .setHintTextSize(50)            // 设置提示文本的大小
+                .setInnerRectangleColor("#000") // 设置矩形框颜色
                 .setOnTouchOutsideListener(new View.OnClickListener() { // 可定义点击动画外部分的响应
                     @Override
                     public void onClick(View v) {
@@ -99,3 +100,19 @@
   ```
   LoadingViewManager.dismiss(true); // true参数：isForcedDismiss 是否强制关闭
   ```
+
+#### 参数默认值
+
+```
+minAnimTime = 1000
+
+maxAnimTime = 600000
+
+setLoadingContentMargins(50, 50, 50, 50, 20)
+
+setAnimationSize(0.1429)
+
+textSize = 14
+
+setHintTextMaxWidth(0.3333)
+```
