@@ -133,4 +133,4 @@ TriangleSkewSpinIndicator、PacmanIndicator、BallGridBeatIndicator、SemiCircle
 
 ## 感谢
 
-  [AVLoadingIndicatorView](https://github.com/hanzhanbing/AVLoadingIndicatorView)
+  - [AVLoadingIndicatorView](https://github.com/hanzhanbing/AVLoadingIndicatorView)
