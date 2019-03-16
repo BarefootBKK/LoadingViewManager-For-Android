@@ -119,9 +119,21 @@ textSize = 14
 setHintTextMaxWidth(0.3333)
 ```
 
-动画样式
+***动画样式***
 
-<img src="https://raw.githubusercontent.com/hanzhanbing/AVLoadingIndicatorView/master/screenshots/avi.gif" width="250px" />
+<img src="https://raw.githubusercontent.com/hanzhanbing/AVLoadingIndicatorView/master/screenshots/avi.gif" width="300px" />
+
+***样式名称***
+
+- 第一行
+
+    BallPulseIndicator
+    BallGridPulseIndicator
+    BallClipRotateIndicator
+    BallClipRotatePulseIndicator
+    
+    
+
 
 ## 感谢
 
