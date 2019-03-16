@@ -53,7 +53,7 @@
                 .setOnTouchOutsideListener(new View.OnClickListener() { 
                     @Override
                     public void onClick(View v) {
-                        // 可定义点击动画外部分的响应
+                        // 可自定义点击动画外部分的响应
                     }
                 })
                 .setOnAnimatingListener(new LoadingViewManager.OnAnimatingListener() {  // 动画加载中的监听器
