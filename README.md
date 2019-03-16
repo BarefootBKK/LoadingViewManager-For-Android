@@ -89,16 +89,18 @@
 
 ### 高级
 
-#### 动画加载中，更新文本信息
+#### 动画加载中，更新文本信息或动画样式
   
   ```
   LoadingViewManager.updateHintText("更新提示");
+  
+  LoadingViewManager.updateAnimation("动画样式名称");
   ```
   
 #### 强制关闭动画
 
   ```
-  LoadingViewManager.dismiss(true); // true参数：isForcedDismiss 是否强制关闭
+  LoadingViewManager.dismiss(true); // 参数：isForcedDismiss 是否强制关闭
   ```
 
 #### 参数默认值
@@ -116,3 +118,7 @@ textSize = 14
 
 setHintTextMaxWidth(0.3333)
 ```
+
+### 特别感谢
+
+  本项目基于 AVLoadingIndicatorView[] 项目二次开发，感谢原作者提供的炫酷加载动画样式框架
