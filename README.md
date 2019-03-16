@@ -42,7 +42,7 @@
                         .build();
   ```
   
-#### 显示加载框
+#### 显示加载边框
 
   ```
   LoadingViewManager.with(activity)
@@ -52,7 +52,7 @@
   ```
     
     
-### 概览
+#### 概览
 
   ```
   LoadingViewManager.with(this)                 // Activity或Fragment
@@ -84,5 +84,18 @@
                     }
                 })
                 .build();   // 开始构建
-    ```
+  ```
 
+### 高级
+
+#### 动画加载中，更新文本信息
+  
+  ```
+  LoadingViewManager.updateHintText("更新提示");
+  ```
+  
+#### 强制关闭动画
+
+  ```
+  LoadingViewManager.dismiss(true); // true参数：isForcedDismiss 是否强制关闭
+  ```
