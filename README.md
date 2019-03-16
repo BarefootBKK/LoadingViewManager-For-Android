@@ -125,48 +125,45 @@ setHintTextMaxWidth(0.3333)
 
 ***样式名称***
 
-- 第一行
+```
+// 第一行
+BallPulseIndicator
+BallGridPulseIndicator
+BallClipRotateIndicator
+BallClipRotatePulseIndicator
+// 第二行
+SquareSpinIndicator
+BallClipRotateMultipleIndicator
+BallPulseRiseIndicator
+BallRotateIndicator
+// 第三行
+CubeTransitionIndicator
+BallZigZagIndicator
+BallZigZagDeflectIndicator
+BallTrianglePathIndicator
+// 第四行
+BallScaleIndicator
+LineScaleIndicator
+LineScalePartyIndicator
+BallScaleMultipleIndicator
+// 第五行
+BallPulseSyncIndicator
+BallBeatIndicator
+LineScalePulseOutIndicator
+LineScalePulseOutRapidIndicator
+// 第六行
+BallScaleRippleIndicator
+BallScaleRippleMultipleIndicator
+BallSpinFadeLoaderIndicator
+LineSpinFadeLoaderIndicator
+// 第七行
+TriangleSkewSpinIndicator
+PacmanIndicator
+BallGridBeatIndicator
+SemiCircleSpinIndicator
 
-```
-BallPulseIndicator、BallGridPulseIndicator、BallClipRotateIndicator、BallClipRotatePulseIndicator
-```
-    
-- 第二行
-
-```
-SquareSpinIndicator、BallClipRotateMultipleIndicator、BallPulseRiseIndicator、BallRotateIndicator
-```
-
-- 第三行
-
-```
-CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
-```
-
-- 第四行
-
-```
-CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
-```
-
-- 第五行
-
-```
-CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
-```
-
-- 第六行
-
-```
-CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
-```
-
-- 第七行
-
-```
-CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
 ```
 
 ## 感谢
 
-  本项目基于 [AVLoadingIndicatorView](https://github.com/hanzhanbing/AVLoadingIndicatorView) 项目二次开发，感谢原作者提供的炫酷加载动画样式框架
+  [AVLoadingIndicatorView](https://github.com/hanzhanbing/AVLoadingIndicatorView)
