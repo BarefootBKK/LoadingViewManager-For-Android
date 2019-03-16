@@ -2,7 +2,7 @@
 
 这是一个能快速搭建加载动画的封装类，无需任何布局文件，并搭配多种加载动画
 
-## 引入本项目
+## 准备工作
 
 ### 在build.gradle(app)中加入依赖
 
@@ -14,3 +14,14 @@
 ### 引入LoadingViewManager
 
   下载本项目的```LoadingViewManager.java```文件，将其复制到自己的安卓项目中
+  
+  
+## 快速开始
+
+### 基本用法
+
+```
+LoadingViewManager.with(Activity或Fragment)
+                .setHintText("加载提示")
+                .build();
+```
