@@ -1,6 +1,6 @@
 # LoadingViewManager-For-Android
 
-这是一个能快速搭建加载动画的封装类，无需任何布局文件，并搭配多种加载动画
+**这是一个能快速搭建加载动画的封装类，无需任何布局文件，并搭配多种加载动画**
 
 ## 准备工作
 
@@ -138,6 +138,30 @@ SquareSpinIndicator、BallClipRotateMultipleIndicator、BallPulseRiseIndicator�
 ```
 
 - 第三行
+
+```
+CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
+```
+
+- 第四行
+
+```
+CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
+```
+
+- 第五行
+
+```
+CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
+```
+
+- 第六行
+
+```
+CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
+```
+
+- 第七行
 
 ```
 CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
