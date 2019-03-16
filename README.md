@@ -10,3 +10,7 @@
   implementation 'com.wang.avi:library:2.1.3'
   implementation 'com.squareup.assertj:assertj-android-cardview-v7:1.2.0'
   ```
+  
+### 引入LoadingViewManager
+
+  下载本项目的LoadingViewManager.java文件，将其复制到自己的安卓项目中
