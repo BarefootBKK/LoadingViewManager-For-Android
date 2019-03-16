@@ -127,41 +127,18 @@ setHintTextMaxWidth(0.3333)
 
 ```
 // 第一行
-BallPulseIndicator
-BallGridPulseIndicator
-BallClipRotateIndicator
-BallClipRotatePulseIndicator
+BallPulseIndicator、BallGridPulseIndicator、BallClipRotateIndicator、BallClipRotatePulseIndicator
 // 第二行
-SquareSpinIndicator
-BallClipRotateMultipleIndicator
-BallPulseRiseIndicator
-BallRotateIndicator
+SquareSpinIndicator、BallClipRotateMultipleIndicator、BallPulseRiseIndicator、BallRotateIndicator
 // 第三行
-CubeTransitionIndicator
-BallZigZagIndicator
-BallZigZagDeflectIndicator
-BallTrianglePathIndicator
+CubeTransitionIndicator、BallZigZagIndicator、BallZigZagDeflectIndicator、BallTrianglePathIndicator
 // 第四行
-BallScaleIndicator
-LineScaleIndicator
-LineScalePartyIndicator
-BallScaleMultipleIndicator
+BallScaleIndicator、LineScaleIndicator、LineScalePartyIndicator、BallScaleMultipleIndicator
 // 第五行
-BallPulseSyncIndicator
-BallBeatIndicator
-LineScalePulseOutIndicator
-LineScalePulseOutRapidIndicator
-// 第六行
-BallScaleRippleIndicator
-BallScaleRippleMultipleIndicator
-BallSpinFadeLoaderIndicator
-LineSpinFadeLoaderIndicator
+BallPulseSyncIndicator、BallBeatIndicator、LineScalePulseOutIndicator、LineScalePulseOutRapidIndicator
+// 第六行BallScaleRippleIndicator、BallScaleRippleMultipleIndicator、BallSpinFadeLoaderIndicator、LineSpinFadeLoaderIndicator
 // 第七行
-TriangleSkewSpinIndicator
-PacmanIndicator
-BallGridBeatIndicator
-SemiCircleSpinIndicator
-
+TriangleSkewSpinIndicator、PacmanIndicator、BallGridBeatIndicator、SemiCircleSpinIndicator
 ```
 
 ## 感谢
