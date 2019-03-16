@@ -13,4 +13,4 @@
   
 ### 引入LoadingViewManager
 
-  下载本项目的LoadingViewManager.java文件，将其复制到自己的安卓项目中
+  下载本项目的```LoadingViewManager.java```文件，将其复制到自己的安卓项目中
