@@ -21,3 +21,26 @@
   ```
   LoadingViewManager.with(Activity或Fragment).setHintText("加载提示").build();
   ```
+
+## 更多用法
+
+### 修改动画样式
+
+  ```
+  LoadingViewManager.with(LoginActivity.this)
+                        .setAnimationStyle("BallClipRotatePulseIndicator")  // 修改动画样式，传入样式名称
+                        .setHintText("正在加载")
+                        .build();
+  ```
+  
+### 显示加载框
+
+  ```
+  LoadingViewManager.with(LoginActivity.this)
+                        .setShowInnerRectangle(true)  // 显示矩形框
+                        .setHintText("正在加载")
+                        .build();
+  ```
+    
+### 概览
+
