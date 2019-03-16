@@ -3,9 +3,7 @@
 **这是一个能快速搭建加载动画的封装类，无需任何布局文件，并搭配多种加载动画**
 
 <div>
-<img src="https://img-blog.csdnimg.cn/20190317031501559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="250px" /> 
-<img src="https://img-blog.csdnimg.cn/20190317031647134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="250px" />
-<img src="https://img-blog.csdnimg.cn/20190317031701804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="250px" />
+<img src="https://img-blog.csdnimg.cn/20190317031501559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="250px" /><img src="https://img-blog.csdnimg.cn/20190317031647134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="250px" /><img src="https://img-blog.csdnimg.cn/20190317031701804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="250px" />
 </div>
 <img src="https://raw.githubusercontent.com/hanzhanbing/AVLoadingIndicatorView/master/screenshots/avi.gif" width="250px" />
 
