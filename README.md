@@ -24,7 +24,7 @@
 
 ## 更多用法
 
-### 修改动画样式
+#### 修改动画样式
 
   ```
   LoadingViewManager.with(LoginActivity.this)
@@ -33,7 +33,7 @@
                         .build();
   ```
   
-### 显示加载框
+#### 显示加载框
 
   ```
   LoadingViewManager.with(LoginActivity.this)
