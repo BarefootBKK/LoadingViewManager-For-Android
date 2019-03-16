@@ -119,6 +119,10 @@ textSize = 14
 setHintTextMaxWidth(0.3333)
 ```
 
+动画样式
+
+<img src="https://raw.githubusercontent.com/hanzhanbing/AVLoadingIndicatorView/master/screenshots/avi.gif" width="250px" />
+
 ## 感谢
 
   本项目基于 [AVLoadingIndicatorView](https://github.com/hanzhanbing/AVLoadingIndicatorView) 项目二次开发，感谢原作者提供的炫酷加载动画样式框架
