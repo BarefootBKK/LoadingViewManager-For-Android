@@ -56,6 +56,12 @@ public class LoadingViewManager {
         }
     }
 
+    public static void updateAnimation(String animationName) {
+        if (loadingViewContainer != null) {
+            loadingViewContainer.setAnimationStyle(animationName);
+        }
+    }
+
     public static boolean isShowing() {
         if (loadingViewContainer == null) {
             return false;
@@ -293,7 +299,7 @@ public class LoadingViewManager {
             return this;
         }
 
-        public LoadingViewContainer setIndicator(String indicatorName) {
+        public LoadingViewContainer setAnimationStyle(String indicatorName) {
             avLoadingIndicatorView.setIndicator(indicatorName);
             return this;
         }
