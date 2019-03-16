@@ -20,8 +20,6 @@
 
 ### 基本用法
 
-```
-LoadingViewManager.with(Activity或Fragment)
-                .setHintText("加载提示")
-                .build();
-```
+  ```
+  LoadingViewManager.with(Activity或Fragment).setHintText("加载提示").build();
+  ```
