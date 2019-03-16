@@ -1,5 +1,3 @@
-package com.example.ar_go.managers;
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Build;
