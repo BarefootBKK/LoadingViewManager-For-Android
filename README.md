@@ -121,4 +121,4 @@ setHintTextMaxWidth(0.3333)
 
 ### 特别感谢
 
-  本项目基于 AVLoadingIndicatorView[] 项目二次开发，感谢原作者提供的炫酷加载动画样式框架
+  本项目基于 [AVLoadingIndicatorView](https://github.com/hanzhanbing/AVLoadingIndicatorView) 项目二次开发，感谢原作者提供的炫酷加载动画样式框架
