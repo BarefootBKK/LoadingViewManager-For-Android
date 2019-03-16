@@ -47,7 +47,7 @@
                 .setInnerRectangleAlpha(0.8f)   // 设置矩形框透明度
                 .setLoadingContentMargins(20, 40, 20, 50)   // 设置动画与矩形框的距离，间接也设置了矩形框大小
                 .setMinAnimTime(2000)           // 设置动画的最短时长
-                .setAnimationSize(400, 400)     // 设置动画大小
+                .setAnimationSize(400, 400)     // 设置动画样式大小
                 .setHintTextSize(50)            // 设置提示文本的大小
                 .setInnerRectangleColor("#000") // 设置矩形框颜色
                 .setOnTouchOutsideListener(new View.OnClickListener() { // 可定义点击动画外部分的响应
