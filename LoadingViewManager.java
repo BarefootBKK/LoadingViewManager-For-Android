@@ -3,6 +3,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.util.TypedValue;
@@ -28,8 +29,17 @@ public class LoadingViewManager {
         return loadingViewContainer;
     }
 
+    public static LoadingViewContainer with(Fragment fragment) {
+        loadingViewContainer = new LoadingViewContainer(fragment);
+        return loadingViewContainer;
+    }
+
     public LoadingViewManager(Activity activity) {
         loadingViewContainer = new LoadingViewContainer(activity);
+    }
+
+    public LoadingViewManager(Fragment fragment) {
+        loadingViewContainer = new LoadingViewContainer(fragment);
     }
 
     public LoadingViewContainer getLoadingViewContainer() {
@@ -100,6 +110,12 @@ public class LoadingViewManager {
         public LoadingViewContainer(Activity activity) {
             this.mActivity = activity;
             this.parentView  = (ViewGroup)((ViewGroup)activity.findViewById(android.R.id.content)).getChildAt(0);
+            buildLayout();
+        }
+
+        public LoadingViewContainer(Fragment fragment) {
+            this.mActivity = fragment.getActivity();
+            this.parentView  = (ViewGroup)((ViewGroup) fragment.getActivity().findViewById(android.R.id.content)).getChildAt(0);
             buildLayout();
         }
 
