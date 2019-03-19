@@ -2,7 +2,7 @@
 
 **这是一个能快速创建【加载动画】的封装类，无需任何布局文件，并搭配多种加载动画**
 
-<img src="https://img-blog.csdnimg.cn/20190317032900886.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="200px" /><img src="https://img-blog.csdnimg.cn/20190317032948915.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="200px" /><img src="https://img-blog.csdnimg.cn/20190317033015178.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="200px" /><img src="https://raw.githubusercontent.com/hanzhanbing/AVLoadingIndicatorView/master/screenshots/avi.gif" width="226px" />
+<img src="https://img-blog.csdnimg.cn/20190317032900886.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="200px" /><img src="https://img-blog.csdnimg.cn/20190317032948915.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="200px" /><img src="https://img-blog.csdnimg.cn/20190317033015178.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hCS19NeVN1bW1lckNU,size_16,color_FFFFFF,t_70" width="200px" /><img src="https://img-blog.csdnimg.cn/20190319214947226.gif" width="226px" />
 
 ## 准备工作
 
