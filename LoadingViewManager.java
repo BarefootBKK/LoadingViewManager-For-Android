@@ -1,4 +1,5 @@
 import android.app.Activity;
+import android.app.Fragment;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
@@ -11,8 +12,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.wang.avi.AVLoadingIndicatorView;
-
-import java.lang.ref.WeakReference;
 
 /**
  * @author BarefootBKK
@@ -69,11 +68,7 @@ public class LoadingViewManager {
     }
 
     public static boolean isShowing() {
-        if (loadingViewContainer == null) {
-            return false;
-        } else {
-            return loadingViewContainer.isShowing();
-        }
+        return loadingViewContainer != null && loadingViewContainer.isShowing();
     }
 
     public interface OnAnimatingListener {
