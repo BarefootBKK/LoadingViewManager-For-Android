@@ -3,8 +3,6 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
@@ -14,9 +12,11 @@ import android.widget.TextView;
 
 import com.wang.avi.AVLoadingIndicatorView;
 
+import java.lang.ref.WeakReference;
+
 /**
  * @author BarefootBKK
- * @date 2019/03/17
+ * @date 2020/02/02
  */
 public class LoadingViewManager {
     public final static int MATCH_PARENT = RelativeLayout.LayoutParams.MATCH_PARENT;
@@ -30,8 +30,7 @@ public class LoadingViewManager {
     }
 
     public static LoadingViewContainer with(Fragment fragment) {
-        loadingViewContainer = new LoadingViewContainer(fragment);
-        return loadingViewContainer;
+        return with(fragment.getActivity());
     }
 
     public LoadingViewManager(Activity activity) {
@@ -39,7 +38,7 @@ public class LoadingViewManager {
     }
 
     public LoadingViewManager(Fragment fragment) {
-        loadingViewContainer = new LoadingViewContainer(fragment);
+        this(fragment.getActivity());
     }
 
     public LoadingViewContainer getLoadingViewContainer() {
@@ -113,12 +112,6 @@ public class LoadingViewManager {
             buildLayout();
         }
 
-        public LoadingViewContainer(Fragment fragment) {
-            this.mActivity = fragment.getActivity();
-            this.parentView  = (ViewGroup)((ViewGroup) fragment.getActivity().findViewById(android.R.id.content)).getChildAt(0);
-            buildLayout();
-        }
-
         @SuppressWarnings("ResourceType")
         private void buildLayout() {
             size = mActivity.getResources().getDisplayMetrics().widthPixels;
@@ -172,35 +165,16 @@ public class LoadingViewManager {
         }
 
         public LoadingViewContainer setLoadingContentMargins(int margins) {
-            // 加载动画控件
-            animationLayoutParams.topMargin = margins;
-            animationLayoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
-            // 字体控件
-            textLayoutParams.leftMargin = margins;
-            textLayoutParams.rightMargin = margins;
-            textLayoutParams.bottomMargin = margins;
-            textLayoutParams.topMargin = defaultAnimText;
-            return this;
+            return setLoadingContentMargins(margins, margins, margins, margins);
         }
 
         public LoadingViewContainer setLoadingContentMargins(int left, int top, int right, int bottom) {
-            // 加载动画控件
-            animationLayoutParams.topMargin = top;
-            animationLayoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
-            // 字体控件
-            textLayoutParams.leftMargin = left;
-            textLayoutParams.rightMargin = right;
-            textLayoutParams.bottomMargin = bottom;
-            textLayoutParams.topMargin = defaultAnimText;
-            return this;
+            return setLoadingContentMargins(left, top, right, bottom, defaultAnimText);
         }
 
         public LoadingViewContainer setAnimationSize(double multiple) {
-            if (multiple > 0) {
-                animationLayoutParams.width = (int)(size * multiple);
-                animationLayoutParams.height = (int)(size * multiple);
-            }
-            return this;
+            int value = (int)(size * multiple);
+            return setAnimationSize(value, value);
         }
 
         public LoadingViewContainer setAnimationSize(int width, int height) {
@@ -256,8 +230,7 @@ public class LoadingViewManager {
         }
 
         public LoadingViewContainer setInnerRectangleColor(String color) {
-            innerRectangleCover.setBackgroundColor(Color.parseColor(color));
-            return this;
+            return setInnerRectangleColor(Color.parseColor(color));
         }
 
         public LoadingViewContainer setInnerRectangleColor(int color) {
@@ -407,6 +380,7 @@ public class LoadingViewManager {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
+                    MyHandler mHandler = new MyHandler(mActivity);
                     long time = 0;
                     while (true) {
                         try {
@@ -424,7 +398,7 @@ public class LoadingViewManager {
                             time += 100;
                             Thread.sleep(100);
                         } catch (Exception e) {
-                            Log.d("测试", "动画出错run: " + e.toString());
+                            Log.d("测试", "动画出错: " + e.toString());
                         }
                     }
                     mHandler.sendEmptyMessage(5);
@@ -432,13 +406,22 @@ public class LoadingViewManager {
             }).start();
         }
 
-        private Handler mHandler = new Handler() {
+        class MyHandler extends Handler {
+            WeakReference<Activity> activityWeakReference;
+            
+            MyHandler(Activity activity) {
+                this.activityWeakReference = new WeakReference<>(activity);
+            }
+
             @Override
             public void handleMessage(Message msg) {
-                if (!isDismissed) {
-                    dismiss();
+                super.handleMessage(msg);
+                if (activityWeakReference != null) {
+                    if (!isDismissed) {
+                        dismiss();
+                    }
                 }
             }
-        };
+        }
     }
 }
