@@ -46,10 +46,7 @@ public class LoadingViewManager {
     }
 
     public static void dismiss() {
-        if (loadingViewContainer != null) {
-            loadingViewContainer.dismiss(false);
-            loadingViewContainer = null;
-        }
+        dismiss(false);
     }
 
     public static void dismiss(boolean isForcedDismiss) {
